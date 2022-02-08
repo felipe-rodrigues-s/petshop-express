@@ -1,7 +1,9 @@
 const pet = require('../model/pets.json')
+
 const PetsController = {
   index:(req, res) => {
-    res.render('index', { title: 'meus pets'}, console.log(pet))
+   
+    res.render('index',{ title: 'o pets estão no console do servidor'}, console.log(pet[1]))
   }
 }
 
