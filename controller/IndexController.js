@@ -1,6 +1,8 @@
+const servicos =  require('../model/servico.json')
 const IndexController ={
-  index: (req, res, next)=>{
-    res.render('index', { title: 'Bora Codar'});
+  index: (req, res)=>{
+    const listaServico = JSON.stringify(servicos)
+    res.render('index', {listaServicos: servicos});
   }
 }
 

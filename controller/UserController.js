@@ -1,6 +1,12 @@
 const UserController = {
-  index:(req, res) => {
-    res.render('index', { title: 'Ola Usuario'})
+  cadastro:(req, res) => {
+    res.render('user/cadastro')
+  },
+  login:(req, res) => {
+    res.render('user/login')
+  },
+  sobre:(req, res) => {
+    res.render('user/sobre')
   }
 }
 
