@@ -14,9 +14,5 @@
     { "nome":"aplicacaoVacina",
       "preco": "R$ 80,00", 
       "descricao": "Vacinar o pet"
-    },
-    { "nome": "banho", 
-      "preco": "R$ 40,00", 
-      "descricao": "Banho no pet" 
     }
   ]
