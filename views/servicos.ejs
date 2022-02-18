@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PETSHOP DH</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <%- include('./partials/header.ejs')%>
     <main>
-        <form class="form-cadastro" action="/cadastroservico" method="GET">
+        <form class="form-cadastro" action="cadastroservico" method="GET">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" />
             <label for="preco">Preço</label>
@@ -21,7 +21,7 @@
             <textarea id="msg" name="descricao"></textarea>
             <button type="submit">enviar</button>
         </form>
-        <form class="form-cadastro" action="/cadastroservico" method="POST">
+        <form class="form-cadastro" action="cadastroservico" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" />
             <label for="preco">Preço</label>

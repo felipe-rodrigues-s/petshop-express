@@ -1,13 +1,11 @@
 
 const usuarioController = {
     cadastro:(req,res)=>{
-       res.render('cadastro') 
+       res.render('users/cadastro') 
     },
     login:(req,res)=>{
-        res.render('login') 
-    },
-    contato:(req , res)=>{
-    res.render('usuario/sobre')
+        res.render('users/login') 
     }
+  
 }
 module.exports= usuarioController
