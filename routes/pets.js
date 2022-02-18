@@ -1,11 +1,11 @@
-const express = require('express');
+var express = require('express');
+var router = express.Router();
 
-const router = express.Router();
+const petsController = require("../controller/pets")
 
-const PetsController = require('../controller/PetsController')
+router.get('/listapets',petsController.listaPets)
+router.post('/listapets',petsController.cadastraPet)
 
-// router.get("/", PetsController.index)
 
-router.get("/cadastrapet",PetsController.criaPet)
 
 module.exports = router;
